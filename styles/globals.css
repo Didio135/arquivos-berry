@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+}
+
+@layer base {
+  p {
+    @apply text-lg text-gray-500 dark:text-gray-400 font-light;
+  }
+  .blog-post > img {
+    @apply mx-auto rounded-lg h-auto max-h-96 w-full object-cover;
+  }
+  .blog-post h3 {
+    @apply font-black text-xl pt-4;
+  }
+  .blog-post h2 {
+    @apply font-black text-3xl pt-4;
+  }
+  .blog-post ul, ol {
+    @apply list-disc ml-4 py-4;
+  }
+  .blog-post li {
+    @apply text-lg text-gray-500 dark:text-gray-400 font-light py-1;
+  }
+  .blog-post strong {
+    @apply font-medium text-gray-950;
+  }
+  .success-case p {
+    margin-top: 1rem;
+    font-weight: 200;
+  }
+}
